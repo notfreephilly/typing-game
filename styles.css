@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+    /* COLORS */
+    --bg-primary: #e2adf2;
+    --bg-secondary: #654597;
+    --color-primary: #f8f7ff;
+
+    --cta-btn-bg: #574ae2;
+    --cta-btn-bg-hover: linear-gradient(-45deg, #f26419, #f6ae2d);
+    --cta-color-primary: #fdfffc;
+    --cta-color-secondary: #171614;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg, var(--bg-primary), var(--bg-secondary));
+    color: var(--color-primary);
+}
+
+/* NAVIGATION */
+
+.logo {
+    font-family: "Audiowide", sans-serif;
+    font-size: 3.5rem;
+    background: var(--cta-btn-bg-hover);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    border: 2px solid black;
+}
+
+.nav-container {
+    width: 50%;
+    border: 2px solid white;
+}
+
+.nav-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.list-container li a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+
+/* BUTTONS */
+.cta-btn,
+.hero-btn {
+    background: var(--cta-btn-bg);
+    border: none;
+    color: var(--cta-color-primary);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.cta-btn:hover,
+.hero-btn:hover {
+    background: var(--cta-btn-bg-hover);
+    cursor: pointer;
+    color: var(--cta-color-secondary);
+}
