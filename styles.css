@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
 
 :root {
     /* COLORS */
@@ -22,9 +23,9 @@
 
 body {
 
-    background: #2b2d42;
+    background: linear-gradient(to bottom, #2b2d42, #e8e9ed);
     color: var(--color-primary);
-    height: 200vh;
+    height: 250vh;
 }
 
 /* NAVIGATION */
@@ -53,7 +54,7 @@ body {
 
 .nav-container {
     width: 50%;
-    border: 2px solid white;
+
 }
 
 .nav-container ul {
@@ -61,6 +62,8 @@ body {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    font-family: "Blinker", sans-serif;
+    font-weight: bold;
 }
 
 .list-container li a {
@@ -80,6 +83,7 @@ body {
     border-radius: 8px;
     font-size: 1rem;
     font-weight: bold;
+    font-family: "Blinker", sans-serif;
 }
 
 .cta-btn:hover,
@@ -95,10 +99,17 @@ main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    margin-top: 14%;
+}
+
+main p {
+    font-family: "Blinker", sans-serif;
+    font-size: 1.2rem;
 }
 
 .hero-container {
     place-items: center;
+
 }
 
 .hero {
@@ -167,9 +178,52 @@ section h2 {
 }
 
 .cta-container {
-    border: 2px solid red;
+    place-items: center;
+}
+
+
+.cta {
+    height: 30vh;
+    width: 50%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #8d99ae, #574ae2);
+    border-radius: 24px;
+    gap: 2.5rem;
+
 }
 
 footer {
-    border: 2px solid blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Blinker", sans-serif;
+    padding: 24px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.4rem;
+    background: var(--cta-btn-bg-hover);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-links .list-container {
+    margin-top: 20%;
+    list-style: none;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    font-weight: bold;
 }
