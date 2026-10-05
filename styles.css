@@ -12,7 +12,7 @@
     --cta-color-primary: #fdfffc;
     --cta-color-secondary: #171614;
 
-    --hero-bg-color: #8d99ae;
+    --hero-bg-color: #30343f;
 }
 
 * {
@@ -23,9 +23,9 @@
 
 body {
 
-    background: linear-gradient(to bottom, #2b2d42, #e8e9ed);
+    background: #fafaff;
     color: var(--color-primary);
-    height: 250vh;
+    /* height: 100vh; */
 }
 
 /* NAVIGATION */
@@ -43,13 +43,15 @@ body {
 
 .header {
     width: 100%;
-    height: 10vh;
+    height: 11vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-
+    background: #273469;
+    position: fixed;
+    top: 0
 }
 
 .nav-container {
@@ -91,7 +93,7 @@ body {
     background: var(--cta-btn-bg-hover);
     cursor: pointer;
     font-weight: bold;
-    color: var(--cta-color-secondary);
+    color: var(--color-primary);
 }
 
 /* MAIN */
@@ -99,7 +101,7 @@ main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    margin-top: 14%;
+    margin-top: 8%;
 }
 
 main p {
@@ -119,7 +121,7 @@ main p {
     align-items: center;
     gap: 2.8rem;
     background: var(--hero-bg-color);
-    height: 28vh;
+    height: 30vh;
     width: 50%;
     margin: 2% 0;
     padding: 16px;
@@ -139,6 +141,8 @@ section h2 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* word-spacing: 6px; */
+    letter-spacing: 3px;
 }
 
 .card-container {
@@ -157,7 +161,7 @@ section h2 {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 20vh;
+    height: 22vh;
     text-align: center;
     padding: 24px;
     gap: 2rem;
@@ -169,12 +173,13 @@ section h2 {
 
 .card h3 {
     font-family: "Audiowide", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
     background: var(--cta-btn-bg-hover);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    letter-spacing: 2px;
 }
 
 .cta-container {
@@ -185,25 +190,26 @@ section h2 {
 .cta {
     height: 30vh;
     width: 50%;
-    padding: 12px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #8d99ae, #574ae2);
+    background: var(--hero-bg-color);
     border-radius: 24px;
-    gap: 2.5rem;
+    gap: 1.6rem;
 
 }
 
 footer {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-family: "Blinker", sans-serif;
-    padding: 24px;
+    padding: 20px;
+    background: #273469;
+    margin-top: 20%;
 }
 
 .footer-logo a {
@@ -217,9 +223,8 @@ footer {
 }
 
 .footer-links .list-container {
-    margin-top: 20%;
     list-style: none;
-    height: 12vh;
+    height: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
