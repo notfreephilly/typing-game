@@ -74,6 +74,13 @@ body {
     font-size: 1.4rem;
 }
 
+.list-container li a:hover {
+    background: var(--cta-btn-bg-hover);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 
 /* BUTTONS */
 .cta-btn,
@@ -141,7 +148,6 @@ section h2 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    /* word-spacing: 6px; */
     letter-spacing: 3px;
 }
 
